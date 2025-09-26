@@ -7,6 +7,8 @@ partial class Program {
         bool esEstudiante = true;
         
         Console.WriteLine($"Nombre: {nombre}, Edad: {edad}, es Estudiante: {esEstudiante}");
+        
+
     }
 
     
