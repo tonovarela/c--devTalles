@@ -3,9 +3,14 @@ partial class Program
 {
     static void Main(string[] args)
     {
-
-      Console.WriteLine("-----------");
-       Operators();
-      Console.WriteLine("-----------");
+     //   Variables();
+        //DataTypes();
+        //NumericTypes();
+        //StringTypes();
+        //SalesReport();
+    //    SalaryCalculator();
+        //showTime();
+        //DaysOfLife();
+        DaysUntilNextBirthday();
     }
 }
