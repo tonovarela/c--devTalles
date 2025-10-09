@@ -11,6 +11,7 @@ partial class Program
     //    SalaryCalculator();
         //showTime();
         //DaysOfLife();
-        DaysUntilNextBirthday();
-    }
+        //DaysUntilNextBirthday();
+        InventoryManager();
+      }
 }

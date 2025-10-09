@@ -20,7 +20,7 @@ partial class Program {
 }
 
 public  class Articulo {
-public string Nombre { get; set; }
+public required string Nombre { get; set; }
 public int Stock { get; set; }
 public double Precio { get; set; }
   
