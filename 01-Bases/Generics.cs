@@ -1,3 +1,4 @@
+
 partial class Program {
     static void Generics() {
 
@@ -33,6 +34,6 @@ class Box<T> {
     public T? Content { get; set;  }
 
     public void Show(){
-        Console.WriteLine($"Content: {Content}");
+        WriteLine($"Content: {Content}");
     }
 }
