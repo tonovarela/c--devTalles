@@ -4,6 +4,10 @@ partial class Program
     static void Main(string[] args)
     {     
         //Conditionals();
-        FizzBuzz();
-    }
+        //FizzBuzz();
+
+        LoopControl();
+        
+        
+  }
 }
