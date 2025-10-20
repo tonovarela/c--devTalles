@@ -16,5 +16,8 @@ partial class Program
         //AnonymousFunctions();
 #endregion                
         
+
+        //TestingClasses();
+        Properties();
   }
 }
