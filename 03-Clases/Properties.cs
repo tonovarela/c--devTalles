@@ -10,7 +10,7 @@ partial class Program {
         Console.WriteLine($"Animal: {lion.Species}, Category: {lion.Category}, Habitat: {lion.Habitat}, Age: {lion.Age}");
 
         // Probando la validación en la propiedad Age
-        lion.Age = -3; // Intento de asignar una edad negativa
+        lion.Age = 3; // Intento de asignar una edad negativa
         Console.WriteLine($"Updated Age (after invalid set): {lion.Age}");
 
     }
