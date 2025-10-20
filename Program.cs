@@ -11,9 +11,10 @@ partial class Program
         //Conversions();
         //ConvertionToDate();
         //Functions();
-#endregion                
         //PrintFactorialTable(5);
         //Tupples();
-        AnonymousFunctions();
+        //AnonymousFunctions();
+#endregion                
+        
   }
 }
