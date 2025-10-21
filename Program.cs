@@ -17,7 +17,16 @@ partial class Program
 #endregion                
         
 
+
         //TestingClasses();
-        Properties();
+        //Properties();
+        //Methods();
+        //HomeWork5();
+
+
+     ProductSalesDemo();
+        //Forzar la recoleccion de basura para ver el destructor en accion
+        //GC.Collect();
+        //GC.WaitForPendingFinalizers();
   }
 }
