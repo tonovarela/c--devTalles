@@ -30,7 +30,8 @@ partial class Program
 //        AbstractClassDemo();
 
         //Visibility();
-        HomeWork6();
+        //HomeWork6();
+        HandleException();
         //Forzar la recoleccion de basura para ver el destructor en accion
         //GC.Collect();
         //GC.WaitForPendingFinalizers();
