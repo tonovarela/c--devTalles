@@ -11,7 +11,7 @@ partial class Program {
         fleet.AddBus(bus2);
         fleet.AddBus(bus3);
         fleet.ShowFleetDetails();
-        bus1.Drive(150);
+        bus1.Drive(150000);
         bus2.Drive(200);
         fleet.ShowFleetDetails();    
     }
