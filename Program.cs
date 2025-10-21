@@ -24,7 +24,10 @@ partial class Program
         //HomeWork5();
 
 
-     ProductSalesDemo();
+     //ProductSalesDemo();
+
+        //Herencia();
+        AbstractClassDemo();
         //Forzar la recoleccion de basura para ver el destructor en accion
         //GC.Collect();
         //GC.WaitForPendingFinalizers();
