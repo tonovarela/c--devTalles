@@ -24,6 +24,12 @@ partial class Program
         //GC.Collect();
         //GC.WaitForPendingFinalizers();
         //AdvancedLinq.Program.AdvancedLINQ();
-        HoweWork7();
+        //HoweWork7();
+        //FileExample();
+        
+        //DirectoryExample();
+        //PathExample();
+        //StreamExample();
+        ManageJsonFile.Program.ManageJsonFile();
   }
 }
