@@ -23,6 +23,7 @@ partial class Program
         //Forzar la recoleccion de basura para ver el destructor en accion
         //GC.Collect();
         //GC.WaitForPendingFinalizers();
-        AdvancedLinq.Program.AdvancedLINQ();
+        //AdvancedLinq.Program.AdvancedLINQ();
+        HoweWork7();
   }
 }

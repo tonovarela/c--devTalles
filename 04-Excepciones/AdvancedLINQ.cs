@@ -67,6 +67,56 @@ namespace AdvancedLinq
           Console.WriteLine($" - {member}");
         }
       }  
+
+      //Uniendo collecciones
+      var characterWithHabilities= characters.Join(
+        abilities,
+        a => a.Id,
+        b => b.CharacterId,
+        (a, b) => new
+        {
+          CharacterName = a.Name,
+          AbilityDescription = b.Description
+        }
+      ).ToList();
+      foreach (var item in characterWithHabilities)
+      {
+        Console.WriteLine($"🦸‍♂️ Personaje: {item.CharacterName}, Habilidad: {item.AbilityDescription}");
+      }
+
+      //Agregaciones
+      int totalPower = statistics.Sum(s => s.Power);
+
+      Console.WriteLine($"⚡ Poder total de todos los personajes: {totalPower}");
+
+      double avengersPower = characters
+                            .Join(
+                              statistics,
+                              c => c.Id,
+                              s => s.CharacterId,
+                              (c, s) => new { c.Team, s.Power }
+                            )
+                            .Where(cs => cs.Team == "Avengers")
+                            .Select(cs => cs.Power)
+                            .Average();
+      var abilitiesByCharacter = characters
+                                .GroupJoin(
+                                  abilities,
+                                  c => c.Id,
+                                  a => a.CharacterId,
+                                  (c, a) => new
+                                  {
+                                    CharacterName = c.Name,
+                                    AbilitiesCount = a.Count()
+                                  }
+                                ).ToList();
+      foreach (var item in abilitiesByCharacter)                      
+      {
+          Console.WriteLine($"🦸‍♂️ Personaje: {item.CharacterName}, Cantidad de habilidades: {item.AbilitiesCount}");
+      }
+
+//      Console.WriteLine($"🛡️ Promedio de poder de los Avengers: {avengersPower:F2}");
+
       
           
 
