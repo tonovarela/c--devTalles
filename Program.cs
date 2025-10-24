@@ -30,6 +30,7 @@ partial class Program
         //DirectoryExample();
         //PathExample();
         //StreamExample();
-        ManageJsonFile.Program.ManageJsonFile();
+        //ManageJsonFile.Program.ManageJsonFile();
+        TaskMaster.Program.TaskMaster();
   }
 }
