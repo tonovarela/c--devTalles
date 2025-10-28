@@ -4,13 +4,13 @@
     "Description": "Limpiar el cuarto",
     "Completed": true,
     "CreatedAt": "2024-04-15T00:00:00",
-    "ModifiedAt": "2025-03-10T19:17:56.371587-04:00",
+    "ModifiedAt": "2025-03-10T17:17:56.371587-06:00",
     "Deleted": true
   },
   {
     "Id": "f73d8fd",
     "Description": "Comer saludable",
-    "Completed": false,
+    "Completed": true,
     "CreatedAt": "2024-01-15T00:00:00",
     "ModifiedAt": "2024-01-15T00:00:00",
     "Deleted": true
@@ -19,8 +19,24 @@
     "Id": "3f6c921",
     "Description": "Estudiar C#",
     "Completed": false,
-    "CreatedAt": "2025-03-11T15:20:53.051415-04:00",
-    "ModifiedAt": "2025-03-12T13:16:17.74727-04:00",
+    "CreatedAt": "2025-03-11T13:20:53.051415-06:00",
+    "ModifiedAt": "2025-03-12T11:16:17.74727-06:00",
+    "Deleted": false
+  },
+  {
+    "Id": "b77fc0f",
+    "Description": "Dominar el mundi",
+    "Completed": false,
+    "CreatedAt": "2025-10-27T15:37:00.886519-06:00",
+    "ModifiedAt": "2025-10-27T15:37:00.886551-06:00",
+    "Deleted": false
+  },
+  {
+    "Id": "7648fd7",
+    "Description": "Dominar el mundo en segunda fase",
+    "Completed": false,
+    "CreatedAt": "2025-10-27T17:24:49.364196-06:00",
+    "ModifiedAt": "2025-10-27T17:24:49.364211-06:00",
     "Deleted": false
   }
 ]

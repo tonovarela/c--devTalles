@@ -28,27 +28,25 @@ partial class Program
       switch (ReadLine())
       {
         case "1":
-        queries.ListTasks();
-          
+        queries.ListTasks();          
           break;
         case "2":
-         //queries.AddTask();
-          // AddTask();
+         AddTask();         
           break;
         case "3":
-          // MarkAsCompleted();
+           MarkAsCompleted();
           break;
         case "4":
-          // EditTask();
+           EditTask();
           break;
         case "5":
-          // RemoveTask();
+           RemoveTask();
           break;
         case "6":
-          //TasksByState();
+        queries.TasksByState();          
           break;
         case "7":
-          //TasksByDescription();
+          queries.TasksByDescription();
           break;
         case "8":
           salir = true;
@@ -62,23 +60,64 @@ partial class Program
     }
   }
 
-   public static void AddTask(){
+   public static void AddTask()
+   {
 
-    
-     try{
-        var tasks = queries.AddTask();
-        fileActions.WriteFile(tasks);
+     try{      
 
-
-
-
-     }catch(Exception ex){
-      ForegroundColor = ConsoleColor.Red;
-      WriteLine($"Error al agregar la tarea: {ex.Message}");      
+      var tasks = queries.AddTask();
+      fileActions.WriteFile(tasks);
      }
+     catch(Exception ex){
 
-         ForegroundColor = ConsoleColor.White;
+      ForegroundColor = ConsoleColor.Red;
+      WriteLine($"Error al agregar la tarea: {ex.Message}");            
+
+     }
+     ForegroundColor = ConsoleColor.White;
 
     }
+
+    public static void RemoveTask(){
+
+         try { 
+          var tasks = queries.RemoveTask();
+          fileActions.WriteFile(tasks);    
+          
+        }catch(Exception ex){
+          ForegroundColor = ConsoleColor.Red;
+          WriteLine($"Error al eliminar la tarea: {ex.Message}");
+        }
+
+    }
+
+    public static void EditTask(){
+    try { 
+
+          var tasks = queries.EditTask();
+          fileActions.WriteFile(tasks);    
+          
+        }catch(Exception ex){
+          ForegroundColor = ConsoleColor.Red;
+          WriteLine($"Error al editar la tarea: {ex.Message}");
+        }
+    }
+
+    public static void MarkAsCompleted(){
+
+        try { 
+
+          var tasks = queries.MarkAsCompleted();
+          fileActions.WriteFile(tasks);    
+          
+        }catch(Exception ex){
+          ForegroundColor = ConsoleColor.Red;
+          WriteLine($"Error al marcar la tarea como completada: {ex.Message}");
+        }
+
 }
+}
+
+
+
 }
